@@ -2,11 +2,6 @@
 const express = require('express');
 
 
-
-
-
-
-
 const app = express();
 // Voici ce que cela signifie en détail :
 
@@ -19,10 +14,17 @@ const app = express();
 // 3- En utilisant cette instance d'application Express, je peux configurer des routes, définir des middlewares, écouter des requêtes HTTP, 
 // et effectuer d'autres opérations pour gérer les requêtes et les réponses dans votre application web.
 const port = 3000;
+
+app.set('view engine', 'ejs');
+
+app.set('views', './app');
+
+
+
 app.use(express.static('public'));
 
 app.get('/', (request, response) => {
-    response.send('Hello World!');
+    response.render('home');
 });
 
 app.listen(port, () => {
