@@ -13,18 +13,19 @@ const app = express();
 
 // 3- En utilisant cette instance d'application Express, je peux configurer des routes, définir des middlewares, écouter des requêtes HTTP, 
 // et effectuer d'autres opérations pour gérer les requêtes et les réponses dans votre application web.
-const port = 3000;
-
-app.set('view engine', 'ejs');
-
-app.set('views', './app');
+const port = 5000;
 
 
+// Middleware pour ajouter l'en-tête X-Content-Type-Options: nosniff à toutes les réponses
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  next();
+});
 
-app.use(express.static('public'));
+
 
 app.get('/', (request, response) => {
-    response.render('home');
+    response.render('home.ejs');
 });
 
 app.listen(port, () => {
