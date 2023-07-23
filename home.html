@@ -4,55 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A'M Event's</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- :::::::::::::::::HEADER:::::::::::::::::::: -->
-    <header>
-      <div class="title">
-        <h1>A'M Event's</h1>
-      </div>
+    <div class="container">
+      <header>
+        <div class="title">
+          <h1>A'M Event's</h1>
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Event's</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="#">Login</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <nav>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">les Evenements </a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="backimgloop">
+          <div>
+            <img
+              id="firstImage"
+              src="./img/tablesmariésCouvertBanc.jpg"
+              alt=""
+            />
+          </div>
+          <div><img id="secondImage" src="./img/tableMariés.jpg" alt="" /></div>
 
-    <!-- :::::::::::::::::MAIN:::::::::::::::::::: -->
-    <main>
-      <h2>Présentation de l'entreprise</h2>
-      <section>
-        A'M Event's a pour but d'organiser un mariage et la mise en décor est
-        essentielle
-      </section>
-    </main>
+          <div>
+            <img id="thirdImage" src="./img/pieceMonteyChaises.jpg" alt="" />
+          </div>
+        </div>
+      </header>
 
-    <!-- :::::::::::::::::FOOTER:::::::::::::::::::: -->
+      <!-- :::::::::::::::::MAIN:::::::::::::::::::: -->
+      <main>
+        <section class="presentation">
+          <h2>Présentation de l'entreprise</h2>
+          <p>
+            A'M Event's a pour but d'organiser un mariage et la mise en décor
+            est essentielle Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Dolore voluptatem enim itaque pariatur quos sit officia porro,
+            aspernatur nam saepe dolorum deserunt voluptates, odio hic
+            blanditiis voluptate officiis odit exercitationem vel veniam tempora
+            alias corporis sequi! Facilis eum ipsum alias nisi in qui pariatur
+            reprehenderit voluptatem! Inventore, praesentium laudantium.
+            Delectus.
+          </p>
+        </section>
+      </main>
 
-    <footer>
-      <h2>Nos Réseaux Sociaux</h2>
-      <div class="social">
-        <a href="https://www.facebook.com/"
-          ><img src="img/facebook.png" alt="facebook"
-        /></a>
-        <a href="https://www.instagram.com/"
-          ><img src="img/instagram.png" alt="instagram"
-        /></a>
-        <a href="https://www.twitter.com/"
-          ><img src="img/twitter.png" alt="twitter"
-        /></a>
-      </div>
-      <div class="copy">
-        <p>© 2020 A'M Event's. All rights reserved.</p>
-      </div>
-    </footer>
+      <!-- :::::::::::::::::FOOTER:::::::::::::::::::: -->
+
+      <footer>
+        <h2>Notre Instagram</h2>
+        <div class="social">
+          <a href="https://www.instagram.com/amsistersevents/"
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+           </a>
+        </div>
+        <div class="copy">
+          <p>© A'M Event's. Tout droits réservés.</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,26 +1,48 @@
 html{
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 };
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 38px;
     color: #333;
     display: flex;
     flex-direction: column;
-   background-color: red;
+  ;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+header {
+    border: solid 5px rgb(202, 57, 24) ;
+    
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-header {
-    background: blue;
-    display: flex;
-    flex-direction: row;
+img { 
+height: 90%;
+width: 90%;
+border-radius: 6px;
 }
+.backimgloop{
+  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 main {
-    background: red;
+  border: solid 5px rgb(40, 149, 34) ;
 }
 footer {
-    background: green;
+  border: solid 5px rgb(152, 36, 158) ;
+  
 }
 ul {
     list-style: none;
