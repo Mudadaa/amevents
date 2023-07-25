@@ -14,35 +14,44 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  border: solid 5px rgb(239, 130, 46) ;
+  height: fit-content;
 }
 header {
-    border: solid 5px rgb(202, 57, 24) ;
+  border: solid 5px rgb(202, 57, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: fit-content;
+
     
 }
 nav ul{
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  font-size: 30px;
 }
 
 img { 
-height: 90%;
-width: 90%;
+height: 80%;
+width: 80%;
 border-radius: 6px;
 }
-.backimgloop{
-  
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
 main {
   border: solid 5px rgb(40, 149, 34) ;
+  display: flex;
+  flex-direction: column;
+  
 }
+.photos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 footer {
   border: solid 5px rgb(152, 36, 158) ;
-  
+ 
 }
 ul {
     list-style: none;
