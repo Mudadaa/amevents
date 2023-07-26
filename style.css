@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   border: solid 5px rgb(239, 130, 46) ;
-  height: fit-content;
+  
 }
 header {
   border: solid 5px rgb(202, 57, 24);
@@ -27,31 +27,67 @@ header {
 
     
 }
-nav ul{
+nav ul li{
   justify-content: space-evenly;
   font-size: 30px;
+  border: solid 1px grey;
+  margin: 18px 18px;
+  padding: 15px 13px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #CD9984;
 }
 
 img { 
-height: 80%;
-width: 80%;
+width:40%;
+height: 100%;
+border-radius: 6px;
+}
+img:hover{
+width:50%;
+height:100%;
 border-radius: 6px;
 }
 main {
   border: solid 5px rgb(40, 149, 34) ;
   display: flex;
   flex-direction: column;
-  
+  align-content: space-around;
+  flex-wrap: nowrap;
+ 
 }
-.photos {
+article{
+  height: 100%;
+  width: 40%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  align-self: flex-start;
+  flex-direction: column;
+  font-size: 22px;
+
+}
+.photos{
+height: 100%;
+width: 60%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 
 footer {
   border: solid 5px rgb(152, 36, 158) ;
- 
+  justify-content: flex-end;
+}
+.contacts{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center
+}
+.copy{
+  display: flex;
+ justify-content: center;
+ margin-top: 45px;
 }
 ul {
     list-style: none;
