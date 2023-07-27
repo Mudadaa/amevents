@@ -24,8 +24,12 @@ header {
   justify-content: flex-start;
   align-items: start;
   width: fit-content;
+ 
+}
+nav{
+  position:static;
+  text-decoration: none;
 
-    
 }
 nav ul li{
   justify-content: space-evenly;
@@ -36,47 +40,59 @@ nav ul li{
   border-radius: 8px;
   text-align: center;
   background-color: #CD9984;
+  
+}
+nav ul li:hover{
+background-color: rgb(228, 138, 74);
+transition: all 0.5s ease-in-out;
+color: rgb(85, 113, 165);
+}
+a{
+  color: #333;
+  text-decoration: none;
 }
 
 img { 
-width:40%;
-height: 100%;
+width:25%;
+height: 40%;
 border-radius: 6px;
 }
 img:hover{
-width:50%;
-height:100%;
 border-radius: 6px;
+transform: scale(1.5);
+box-shadow: 1px 1px rgba(0, 0, 0, 0.565);
+transition: all 0.2s ease-in-out;
 }
+
 main {
-  border: solid 5px rgb(40, 149, 34) ;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  flex-wrap: nowrap;
- 
+border: solid 5px rgb(40, 149, 34) ;
+ padding: 40px;
+ display: flex;
+ flex-direction: column;
+
 }
 article{
   height: 100%;
   width: 40%;
   display: flex;
-  align-self: flex-start;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
   font-size: 22px;
 
 }
 .photos{
-height: 100%;
-width: 60%;
+ width: 100%;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap ;
 justify-content: space-around;
-flex-wrap: wrap;
+padding: 10px 80px 10px 0 ;
+
 }
 
 footer {
   border: solid 5px rgb(152, 36, 158) ;
-  justify-content: flex-end;
+  
 }
 .contacts{
   display:flex;
@@ -85,7 +101,8 @@ footer {
   align-items:center
 }
 .copy{
-  display: flex;
+display: flex;
+flex-direction: column;
  justify-content: center;
  margin-top: 45px;
 }
