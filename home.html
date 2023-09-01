@@ -1,92 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A'M Event's</title>
-    <link rel="stylesheet" href="style.css"/>
-    <!-- pour récupérer les icones du site fontawsome je dois puiser dans ce lien -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-  </head>
-  <body>
-    <!-- :::::::::::::::::HEADER:::::::::::::::::::: -->
-      <header>
-          <div class="title">
-            <h1>A'M Event's</h1>
-          </div>
-        
-            <nav>
-            <ul>
-              <li><a href="#">Evenements </a></li>
-              <li><a href="#">A propos</a></li>
-              <li><a href="#footer">Contact</a></li>
-            </ul>
-          </nav>
-        </header>     
-      <!-- :::::::::::::::::::::::::::CONTAINER:::::::::::::::::::::::::::::::: -->
-<div class="container">
-      <!-- :::::::::::::::::MAIN:::::::::::::::::::: -->
-      <main>
-          <section class="photos">        
-              <div><img id="firstImage"src="./img/tablesmariésCouvertBanc.jpg"alt=""/></div>
-              <div><img id="secondImage" src="./img/tablesInvites.jpg" alt=""/></div>
-              <div><img id="thirdImage" src="./img/tableMariés.jpg" alt="" /></div>
-              <div><img id="fourthImage" src="./img/pieceMonteyChaises.jpg" alt="" /></div>
-              <div><img id="fifthImage" src="./img/nounoursBallonBuffet.jpg"  alt="" /></div> 
-          </section>
-  
-      </main>
 
-      <section class="articles">
-        <p><h2>Présentation de l'entreprise</h2>
-          A'M Event's a pour but d'organiser un mariage et la mise en décor
-          est essentielle Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dolore voluptatem enim itaque pariatur quos sit officia porro,
-          aspernatur nam saepe dolorum deserunt voluptates, odio hic
-          blanditiis voluptate officiis odit exercitationem vel veniam tempora
-          alias corporis sequi! Facilis eum ipsum alias nisi in qui pariatur
-          reprehenderit voluptatem! Inventore, praesentium laudantium.
-          Delectus.
-        </p>
-    
-    <p><h2>Evenements</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quae
-        nostrum voluptatibus nemo ipsa saepe animi ad similique ex
-        pariatur possimus temporibus non molestias dicta a eius tempore,
-        necessitatibus explicabo quos et impedit molestiae quasi
-        cupiditate. Recusandae ab consequatur ex delectus laborum, magni
-        
-        ullam, fuga, necessitatibus aliquid ad vitae eveniet dolorem
-        quisquam sunt quibusdam. Doloremque ex maxime non alias expedita
-        rem rerum earum incidunt voluptatum. Nemo, vel neque!</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A'M Event's</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- pour récupérer les icones du site fontawsome je dois puiser dans ce lien -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!-- :::::::::::::::::HEADER:::::::::::::::::::: -->
+  <header>
+    <div class="title">
+      <img src="./img/ameventsLogo.png" alt="le logo d'a et m events" width="200" height="100">
+    </div>
+
+    <nav>
+
+      <ul>
+        <li><a href="./pages/galerie.html">Galerie</a></li>
+        <li><a href="#">Nos Services</a></li>
+        <li><a href="#">À Notre Sujet </a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <!-- :::::::::::::::::::::::::::CONTAINER:::::::::::::::::::::::::::::::: -->
+
+  <!-- :::::::::::::::::MAIN:::::::::::::::::::: -->
+  <main>
+    <div class="bg-overlay">
+      <video class="fullscreen-video" id="myVideo" autoplay="autoplay" muted loop>
+        <source src="./img/AMEventKekkon.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </main>
+
+  <section class="articles">
+    <p>
+    <h2>Présentation de l'entreprise</h2>
+    A'M Event's a pour but d'organiser un mariage et la mise en décor
+    est essentielle Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Dolore voluptatem enim itaque pariatur quos sit officia porro,
+    aspernatur nam saepe dolorum deserunt voluptates, odio hic
+    blanditiis voluptate officiis odit exercitationem vel veniam tempora
+    alias corporis sequi! Facilis eum ipsum alias nisi in qui pariatur
+    reprehenderit voluptatem! Inventore, praesentium laudantium.
+    Delectus.
+    </p>
+
+    <p>
+    <h2>Evenements</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quae
+    nostrum voluptatibus nemo ipsa saepe animi ad similique ex
+    pariatur possimus temporibus non molestias dicta a eius tempore,
+    necessitatibus explicabo quos et impedit molestiae quasi
+    cupiditate. Recusandae ab consequatur ex delectus laborum, magni
+
+    ullam, fuga, necessitatibus aliquid ad vitae eveniet dolorem
+    quisquam sunt quibusdam. Doloremque ex maxime non alias expedita
+    rem rerum earum incidunt voluptatum. Nemo, vel neque!</p>
   </section>
 
-      <!-- :::::::::::::::::FOOTER:::::::::::::::::::: -->
+  <!-- :::::::::::::::::FOOTER:::::::::::::::::::: -->
 
-    <footer id="footer">
-          <div class="contacts">
-                <div class="mail">
-              <h2>Par Email</h2>
-              <a href="mailto:amevent20@gmail.com" target="_blank">
-                <i class="fa-regular fa-envelope fa-2xl"></i>
-              </a>
-             </div>
-              <div class="social">
-                <h2>Par Instagram</h2>
-                <a target="_blank" href="https://www.instagram.com/amsistersevents/" 
-                <i class="fa-brands fa-instagram fa-2xl"></i>
-                </a>
-              </div>
-              <div class="tel">
-                <h2>Par Téléphone  <p> 07 66 00 24 07</p></h2>
-              </div>
-          </div>
-          <div class="copy">
-            <p>© A'M Event's. Tous droits réservés.</p>
-          </div>
-      </footer>
-  </div>
+  <footer id="footer">
+    <div class="contacts">
+      <div class="mail">
+        <h2>Par Email</h2>
+        <a class="mailto-link" target="_blank" href="mailto:amevent20@gmail.com">
+          <i class="fa-regular fa-envelope fa-2xl"></i>
+        </a>
+        <!-- morceau de javascript  pour controler le lien d'ouverture gmail avec une nouvelle fenêtre -->
+
+      </div>
+      <div class="social">
+        <h2>Par Instagram</h2>
+        <a target="_blank" href="https://www.instagram.com/amsistersevents/" <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+      </div>
+      <div class="tel">
+        <h2>Par Téléphone <p> 07 66 00 24 07</p>
+        </h2>
+      </div>
+    </div>
+    <div class="copy">
+      <p>© A'M Event's. Tous droits réservés.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
