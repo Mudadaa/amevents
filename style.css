@@ -4,24 +4,34 @@ html{
     font-size: 20px;
 };
 body {
-    color: #333;
-    display: flex;
-    flex-direction: column;
-  ;
+  display: flex;
+  flex-direction: row;
 }
 
 header {
-  
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background:linear-gradient(90deg, rgba(203,150,23,0.65) 0%, rgba(251,199,0,0.8) 50%,rgba(203,150,23,0.9) 100%);
+ 
 }
-.title{
-  width:200px;
-   height:250px;
+.logo img{
+  width:250px;
+  height:320px;
+  margin-right: 6%;
+  padding-right: 6%;
 }
 nav{
- display: flex;
-  text-decoration: none;
+height: 10vh;
+padding-left: 3%;
+text-decoration: none;
 
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
 }
 nav ul li{
   justify-content: space-evenly;
@@ -32,7 +42,7 @@ nav ul li{
   border-radius: 8px;
   text-align: center;
   background-color: #CD9984;
-  
+  width: fit-content;
 }
 nav ul li:hover{
 background-color: rgb(228, 138, 74);
@@ -44,41 +54,44 @@ a{
   text-decoration: none;
 }
 
-img { 
-height: 100%;
-width: 90%;
-border-radius: 6px;
-}
-img:hover{
-border-radius: 6px;
-transform: scale(1.5);
-box-shadow: 1px 1px rgba(0, 0, 0, 0.565);
-transition: all 0.2s ease-in-out;
-}
 
 main { 
-
-
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 border: solid 5px rgb(40, 149, 34) ;
 padding: 40px;
 margin-top: 40px;
-height: 60vh;
-width: fit-content;
-
+height: fit-content;
+background-color: #CD9984;
 }
 
-#myVideo{
-  width: 50vw;
-  height: 50vh ;
+.bg-overlay{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 60vh ;
   
 }
 .articles{
-
-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
+
 footer {
+  display:flex;
+  flex-direction: column;
   border: solid 5px rgb(152, 36, 158) ;
+  height: 45vh;
+  background-color: #2B2B2B;
+  color: beige;
   
+}
+a i{
+  color: beige;
 }
 .contacts{
   display:flex;
