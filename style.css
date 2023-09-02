@@ -6,6 +6,8 @@ html{
 body {
   display: flex;
   flex-direction: row;
+  padding:0;
+  margin: 0;
 }
 /* --------------------------HEADER------------------------------- */
 header {
@@ -14,12 +16,13 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background:linear-gradient(90deg, rgba(203,150,23,0.65) 0%, rgba(251,199,0,0.8) 50%,rgba(203,150,23,0.9) 100%);
- 
+  background:linear-gradient(90deg, rgba(203,150,23,0.65) 0%, rgba(251,199,0,0.8) 30%,rgba(203,150,23,0.9) 100%);
+ margin-top: 1%;
+  margin-bottom: 2%;
 }
 .logo img{
-  width:250px;
-  height:320px;
+  width:70%;
+  height:70%;
   margin-right: 6%;
   padding-right: 6%;
 }
@@ -38,12 +41,11 @@ nav ul{
 nav ul li{
   justify-content: space-evenly;
   font-size: 30px;
-  border: solid 1px grey;
+  border: solid 3px #d3a18eb3;
   margin: 18px 18px;
   padding: 15px 13px;
   border-radius: 8px;
   text-align: center;
-  background-color: #CD9984;
   width: fit-content;
 }
 nav ul li:hover{
@@ -63,37 +65,47 @@ a{
 main { 
 display: flex;
 flex-direction: row;
-justify-content: space-around;
-border: solid 5px rgb(40, 149, 34) ;
-padding: 40px;
-margin-top: 40px;
-height: fit-content;
-background-color: #CD9984;
+justify-content: center;
+
 }
 
 .bg-overlay{
   display: flex;
-  justify-content: space-around;
-  width: 70vw;
-  height: 80vh;
-  
+  border: 0;
+  margin: 0 1%;
+  justify-content:flex-start;
+  height: 90vh;
+  width: 45vw;
+}
+#colombes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:url(./img/colombesBG.jpg) fixed no-repeat;
+  background-size:cover;
+ width: 55vw;
+ border-radius: 4px;
+ margin-right: 1%;
 }
 .articles{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  padding: 5% 5%;
+  color: beige;
 }
 /* ----------------------FOOTER------------------------------- */
 footer {
   display:flex;
   flex-direction: column;
-  border: solid 5px rgb(152, 36, 158) ;
   height: 40vh;
   background-color: #2B2B2B;
   color: beige;
   padding-top: 20px;
+  border-radius: 5px;
 }
 footer a{
   color: beige;
@@ -112,6 +124,9 @@ footer a{
  
 
   
+}
+h2 i{
+  display: inline;
 }
 .copy{
 align-self: center;
