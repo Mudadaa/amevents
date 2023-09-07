@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../style.css">
   <!-- pour récupérer les icones du site fontawsome je dois puiser dans ce lien -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="./app.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
   <header>
     <div class="logo">
       <a href="/home.html">
-        <img src="../img/ameventsLogo.png" alt="le logo d'a et m events">
+        <img src="../img/aemeventsLogo.png" alt="le logo d'a et m events">
       </a>
     </div>
 
@@ -35,11 +34,11 @@
   <main>
     <div class="galerie">
       <ul>
-        <li class="photo">Photos</li>
-        <li class="videos">Vidéos</li>
+        <li><button class="photos">Photos</button></li>
+        <li><button class="videos">Vidéos</button></li>
       </ul>
     </div>
-    <div class="galerie-photos" hidden>
+    <div class="galeriePhotos">
       <h2>Pièce Montée</h2>
       <img src="../img/pieceMonteyChaises.jpg" alt="">
       <h2>Grand Canapé Blanc Confort pour les Mariés</h2>
@@ -110,10 +109,9 @@
       <p>© A'M Event's. Tous droits réservés.</p>
     </div>
   </footer>
-
+  <script src="../app.js"></script>
 </body>
 
-</html>
-</body>
+
 
 </html>
