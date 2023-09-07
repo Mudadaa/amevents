@@ -6,10 +6,11 @@
      }, 
      getHidePhotos: function() { // Define the function
           console.log("ça click oùùù");
-          app.galeriePhotos.removeAttribute("hidden");
+          app.galeriePhotos.setAttribute("hidden",true);
         },
         getPhotos: function(){
-          app.galeriePhotos.setAttribute("hidden",true);
+          app.galeriePhotos.removeAttribute("hidden");
+          
           console.log("ça s'annule ouuu ?")
         }
    
