@@ -15,10 +15,17 @@
      toggleHidePhotos: function() { 
      console.log("tof caché ou pas ?");
     app.galeriePhotos.hidden =!app.galeriePhotos.hidden
+    app.galerieVideos.hidden
+    if(app.galerieVideos.hidden="false"){
+        app.galeriePhotos
+    }
     },
     toggleHideVideos: function(){
 console.log("video caché ou pas ?");
 app.galerieVideos.hidden=!app.galerieVideos.hidden
+if(app.galeriePhotos.hidden="false"){
+    app.galerieVideos
+}
     }
   }
 

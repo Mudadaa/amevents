@@ -76,14 +76,10 @@ justify-content: center;
   width: 45vw;
 }
 #decoBG{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background:url(./img/colombesBG.jpg) fixed no-repeat;
-  background-size:cover;
- width: 55vw;
- border-radius: 4px;
- margin-right: 1%;
+background:url(./img/couvertNappeBlanche.jpg) no-repeat;
+background-repeat: no-repeat;
+background-size: cover;
+
 }
 .articles{
   display: flex;
@@ -97,14 +93,36 @@ justify-content: center;
 }
 .articles h2{
   color: rgba(251,199,0,0.7);
+
 }
+
+/* -----------------Page Galerie photo&video-------------------- */
+main{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.galerie{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+ 
+}
+
 .galerie ul{
   display: flex;
   flex-direction: row;
   padding-left: 15%;
   
 }
-
+.galeriePhotos{
+  position: relative;
+  margin-left: 150px;
+}
+.galerieVideos{
+  margin-left: 200px;
+}
    li button{
     justify-content: space-evenly;
     font-size: 30px;
@@ -122,27 +140,28 @@ justify-content: center;
     color: #333;
     cursor: pointer;
     }
-  .galerie-photos{
-    display: flex;
-  flex-wrap: wrap;
+  .galeriePhotos h2,.galerieVideos h2{
+    border-radius: 5px;
+    width: fit-content;
+    background-color:rgba(249, 213, 70, 0.766);
+    padding: 3px;
+    font-family:'Lato', sans-serif;
+   font-weight:400;
   }
-  .galerie-photos img{
-    height:15%;
-    width:15%;
-    padding: 5%;
-    
+  #photos img{
+    height: 750px;
+    width:650px;
   }
+
 /* ----------------------FOOTER------------------------------- */
 footer {
   display:flex;
   flex-direction: column;
-
+  justify-content: flex-end;
   background-color: #2B2B2B;
   color: beige;
-  padding-top: 2.5%;
   border-radius: 5px;
-  margin-top: 2%;
-  justify-content: flex-end;
+ margin-top: 10%;
 }
 footer a{
   color: beige;
