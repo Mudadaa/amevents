@@ -130,10 +130,13 @@ main{
   
 }
 .galeriePhotos{
-  position: relative;
+flex-wrap: wrap;
+ justify-content: space-around;
   margin-left: 150px;
 }
 .galerieVideos{
+  flex-wrap: wrap;
+ justify-content: space-around;
   margin-left: 200px;
 }
    li button{
