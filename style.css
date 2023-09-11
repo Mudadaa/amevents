@@ -20,11 +20,22 @@ header {
   padding-bottom: 2%;
   
 }
+.logo{
+  width:330px ;
+  height:380px;
+}
 .logo img{
   width:70%;
   height:70%;
   margin-right: 6%;
-  padding-right: 6%;
+  padding-left: 4%;
+  
+  
+}
+.logo img:hover{
+  scale:1.1;
+  transition: all 1s ease-in-out;
+  transform: rotateY(180deg);
 }
 
 /* --------------------------NAVBAR------------------------------- */
@@ -131,7 +142,7 @@ main{
 }
 .galeriePhotos{
 flex-wrap: wrap;
- justify-content: space-around;
+justify-content: space-around;
   margin-left: 150px;
 }
 .galerieVideos{
