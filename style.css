@@ -9,6 +9,7 @@ body {
   padding:0;
   margin: 0;
 }
+
 /* --------------------------HEADER------------------------------- */
 header {
   display: flex;
@@ -216,20 +217,92 @@ h2 i{
 align-self: center;
 padding-top: 120px;
 }
+/* ------------------------------------------------------------------------ */
+/* téléphone */
+ @media screen and (max-width: 732px) {
+   body{
+    display:flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+   }
+   .logo{
+    display: inline-block;
+    width: 200px;
+    height: 240px;
+   }
+   .logo img{
+    width: 180px;
+    height: 220px;
+   }
 
+nav ul li{
+  display: block;
+  padding: 0;
+  height: fit-content;
+}
 
-/* @media screen and (min-width: 768px) {
-    body {
-      font-size: 14px;
-      display: flex;
+.mainHome { 
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  } 
+  .bg-overlay{
+    justify-content: flex-start;
+    border: 0;
+    margin: 0 ;
+    height: 90vh;
+    width: 100%;
+  }
+  #myVideo{
+    border: 0;
+    width: max-content;
+    margin: 0 ;
+    padding: 0;
+  }
+  #decoBG{
+    justify-content: flex-end;
+    --bg-image:url(./img/couvertNappeBlanche.jpg);
+    --bg-image-opacity:0.15;
+    position: relative;
+    
+    /* isolate crée une nouvelle zone d'empilement. tt ce qui est dans la div que z-index ne peut échapper  */
+    isolation: isolate;
+    margin: 2% 2%;
     }
-    header {
-      flex-direction: column;
-    } 
-    main {
-      flex-direction: row;
-    } 
-    footer {
-      flex-direction: row;
-    } 
-} */
+  
+  
+
+/* ----------------------FOOTER------------------------------- */
+footer {
+  display:grid;
+  grid-template-columns: 100%;
+  background-color: #2B2B2B;
+  color: beige;
+  border-radius: 5px;
+ margin-top: 10%;
+}
+footer a{
+  color: beige;
+}
+.trait_soulign{
+  height: 1px;
+  width: 75%;
+  background-color: #fffae1;
+  margin: 30px auto;
+}
+.contacts{
+  display:grid;
+  grid-template-columns: 100%;
+}
+h2 i{
+  display: inline;
+}
+.copy{
+align-self: center;
+padding-top: 120px;
+padding-left: 250px;
+}
+ }
