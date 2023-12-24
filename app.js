@@ -12,6 +12,12 @@
        app.galerieVideos=document.querySelector(".galerieVideos");
        app.ButtonVideo=document.querySelector(".videos");
        app.ButtonVideo.addEventListener("click", app.toggleVideos);
+// on récupère les 2 golden roses pr la navigation haut/bas de la page
+         app.goldenUp=document.querySelector(".upPics");
+         app.goldenDown=document.querySelector(".downPics");
+         //on ajoute l'évènement click et la fonction de scroll
+     app.goldenUp.addEventListener("click", app.scrollUp);
+    app.goldenDown.addEventListener("click", app.scrolldown);
       }, 
 
 //Pour le toggle caché, montré
@@ -40,7 +46,14 @@ if(app.galerieVideos.style.display==='flex'){
     app.galerieVideos.style.display='flex';
 };
 
-    }
+    },
+
+    scrollUp: function(){
+        window.scrollTo({top:0, behavior:'smooth'});
+    },
+    scrolldown: function(){
+        window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'});
+    },
   }
 
    document.addEventListener('DOMContentLoaded', app.init);
