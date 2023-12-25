@@ -105,10 +105,11 @@ font-family: 'Lato', sans-serif;
 .bg-overlay{
   display: flex;
   border: 0;
-  margin: 0 1%;
-  justify-content:flex-start;
-  height: 90vh;
-  width: 45vw;
+  margin: 0 1% ;
+  margin-top: -150px;
+  justify-content:center;
+  height: 95vh;
+  width: 70vw;
 }
 #decoBG{
 --bg-image:url(./img/couvertNappeBlanche.jpg);
