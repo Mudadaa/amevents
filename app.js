@@ -18,6 +18,10 @@
          //on ajoute l'évènement click et la fonction de scroll
      app.goldenUp.addEventListener("click", app.scrollUp);
     app.goldenDown.addEventListener("click", app.scrolldown);
+     // Ajouter un écouteur d'événements pour les changements de la requête de média
+     window.matchMedia("(max-width: 400px)").addListener(app.handleMediaQuerySize);
+    //pour des tailles d'écran inférieures à 400px, on cache les golden roses
+    app.handleMediaQuerySize();
       }, 
 
 //Pour le toggle caché, montré
@@ -54,6 +58,25 @@ if(app.galerieVideos.style.display==='flex'){
     scrolldown: function(){
         window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'});
     },
-  }
+    handleMediaQuerySize: function () {
+        const matchMedia = window.matchMedia("(max-width: 400px)");
+    
+        // Vérifier si la requête de média correspond
+        if (matchMedia.matches) {
+            // Code à exécuter lorsque la largeur de l'écran est inférieure ou égale à 400 pixels
+            app.goldenUp.style.display = 'none';
+            app.goldenDown.style.display = 'none';
+        } else {
+            // Code à exécuter lorsque la largeur de l'écran est supérieure à 400 pixels
+            // Vous pouvez ajuster ce bloc en fonction de vos besoins
+            app.goldenUp.style.display = 'block'; // ou 'initial', selon votre mise en page
+            app.goldenDown.style.display = 'block'; // ou 'initial', selon votre mise en page
+        }
+    },
+    
+    };
+    
+    
+    
 
    document.addEventListener('DOMContentLoaded', app.init);
