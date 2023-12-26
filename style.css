@@ -155,6 +155,7 @@ main{
   display: flex;
   flex-direction: column;
   height: fit-content;
+  width: 100%;
 }
 .galerie{
   display: flex;
@@ -174,6 +175,7 @@ main{
 flex-wrap: wrap;
 justify-content: space-around;
   margin-left: 150px;
+  
 }
 .galerieVideos{
   flex-wrap: wrap;
@@ -290,6 +292,13 @@ nav ul li{
   width: fit-content;
   margin: 3%;
 }
+#photos img{
+  height: 550px;
+  width:450px;
+}
+#photos h2{
+  font-size:18px;
+}
 }
 @media screen and (max-width: 499px) {
   body{
@@ -326,6 +335,14 @@ nav ul li{
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   } 
+  .galerie{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+   align-content: center;
+   margin-right: 10%;
+  }
   .bg-overlay{
     justify-content: flex-start;
     border: 0;
@@ -339,7 +356,13 @@ nav ul li{
     margin: 0 ;
     padding: 0;
   }
-  
+  #photos img{
+    height: 550px;
+    width:450px;
+  }
+  #photos h2{
+    font-size:18px;
+  }
   
 
 /* ----------------------FOOTER------------------------------- */
@@ -429,9 +452,9 @@ padding-left: 250px;
   
  }
  
- .articles{
-   font-size: 20px;
- }
+ .galeriePhotos{
+  width: 360px;
+}
  
  
  /* ----------------------FOOTER------------------------------- */
@@ -450,13 +473,26 @@ padding-left: 250px;
  padding-top: 30px;
  padding-left: 120px;
  }
+ #photos img{
+  height: 550px;
+  width:450px;
+}
+#photos h2{
+  font-size:18px;
+}
  }
  
 
 
 
 @media screen and (max-width: 800px) {
-
+  #photos img{
+    height: 550px;
+    width:450px;
+  }
+  #photos h2{
+    font-size:18px;
+  }
  header{
   display: grid;
   grid-template-columns: 50% 50%;

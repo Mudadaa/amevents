@@ -1,6 +1,8 @@
 
  const app = {
      init: function(){
+        //on récupère la galerie
+        app.galerie=document.querySelector(".galerie");
       //on récupère la galerie de photos
        app.galeriePhotos= document.querySelector(".galeriePhotos");
       // on récup le boutton pour les photos
@@ -66,6 +68,7 @@ if(app.galerieVideos.style.display==='flex'){
             // Code à exécuter lorsque la largeur de l'écran est inférieure ou égale à 400 pixels
             app.goldenUp.style.display = 'none';
             app.goldenDown.style.display = 'none';
+            app.galerie.style.marginRight = '20%';
         } else {
             // Code à exécuter lorsque la largeur de l'écran est supérieure à 400 pixels
             // Vous pouvez ajuster ce bloc en fonction de vos besoins
